@@ -26,10 +26,15 @@ The steps for this Challenge are divided into the following sections:
      -Two variables of type uint public named lastWithdrawAmount and contractBalance
 3. I Define a function named withdraw that accepts two arguments: amount of type uint and recipient of type payable address. In this function, code the              following:
      -Define a require statement that checks if recipient is equal to either accountOne or accountTwo. If it isn’t, the require statement returns the “You don't       own this account!” text.
+     
       -Define a require statement that checks if balance is sufficient for accomplishing the withdrawal operation. If there are insufficient funds, it returns          the “Insufficient funds!” text.
+      
       -Add an if statement to check if lastToWithdraw is not equal (!=) to recipient. If it’s not equal, set it to the current value of recipient.
+      
       -Call the transfer function of the recipient, and pass it the amount to transfer as an argument.
+      
       -Set lastWithdrawAmount equal to amount.
+      
 I Set the contractBalance variable equal to the balance of the contract by using address(this).balance to reflect the new balance of the contract.
 then I Defined a public payable function named deposit. In this function, I  coded the following:
 1. I Set the contractBalance variable equal to the balance of the contract by using address(this).balance.
